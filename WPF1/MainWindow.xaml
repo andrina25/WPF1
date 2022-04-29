@@ -19,7 +19,7 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="200"/>
-            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <TextBlock  Grid.ColumnSpan="4" FontSize="35" FontFamily="Segoe UI Light"
@@ -29,20 +29,65 @@
         <TextBlock  Grid.Column="1" Grid.Row="1" 
                       Text="     Firstname: "  />
 
-        <TextBox  Grid.Column="1" Grid.Row="2"
-                  Width="500"  Margin="79,23,48,150"
+        <TextBox  Grid.Column="1" Grid.Row="2"  Margin="79,10,70,155"
                   BorderBrush="Black"  />
 
         <TextBlock  Grid.Column="1" Grid.Row="2" 
-               Text="     Job role: " Margin="0,50,0,125" Grid.RowSpan="2" />
+               Text="     Job role: " Margin="0,50,0,117" RenderTransformOrigin="0.514,1.056" />
 
         <CheckBox Grid.Column="1" Grid.Row="2"
-                  Margin="71,145,537,34" RenderTransformOrigin="-1.342,3.433" />
+                  Margin="61,145,537,17" RenderTransformOrigin="-1.342,3.433" />
 
         <TextBlock Grid.Column="1" Grid.Row="2"  
-                   Margin="90,145,333,17"  FontSize="17"
-                   Text="Is coffee drinker"/>
-      
+                   Margin="90,145,171,17"  FontSize="17"
+                   Text=" Is coffee drinker"/>
+
+
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="79,88,0,0" Grid.Row="2" VerticalAlignment="Top" Width="292" RenderTransformOrigin="0.002,0.436">
+            <ListBoxItem Content="Software developer"></ListBoxItem>
+            <ListBoxItem Content="Web developer"></ListBoxItem>
+            <ListBoxItem Content="Database Administrator"></ListBoxItem>
+            <ListBoxItem Content="Information Security Analyst"></ListBoxItem>
+            <ListBoxItem Content="IT Project Manager"></ListBoxItem>
+
+        </ListBox>
+
+
+
+
+        <Border BorderBrush="Black" BorderThickness="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="792"/>
+        <Border BorderBrush="Black" BorderThickness="4" HorizontalAlignment="Left" Height="51" Margin="0,77,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="225"/>
+        <Border BorderBrush="Black" BorderThickness="4" HorizontalAlignment="Left" Height="291" Margin="0,17,0,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="225"/>
+        <Border BorderBrush="Black" BorderThickness="4" Grid.Column="1" HorizontalAlignment="Left" Height="342" Margin="0,77,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="567"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </Grid>
 </Window>
