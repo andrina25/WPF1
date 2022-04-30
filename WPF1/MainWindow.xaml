@@ -18,8 +18,8 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="23*"/>
-            <RowDefinition Height="Auto" MinHeight="196"/>
-            <RowDefinition Height="113*"/>
+            <RowDefinition Height="Auto" MinHeight="207"/>
+            <RowDefinition Height="102*"/>
         </Grid.RowDefinitions>
 
         <TextBlock  Grid.ColumnSpan="2" FontSize="35" FontFamily="Segoe UI Light"
@@ -61,20 +61,23 @@
                     <GridViewColumn/>
                 </GridView>
             </ListView.View>
-            <ListViewItem Content="Julia"></ListViewItem>
-            <ListViewItem Content="Thomas"></ListViewItem>
-            <ListViewItem Content="Alex"></ListViewItem>
-            <ListViewItem Content="Sara"></ListViewItem>
-            <ListViewItem Content="Anna"></ListViewItem>
+            <ListViewItem Content="Julia" Margin="0" Height="53"></ListViewItem>
+            <ListViewItem Content="Thomas" Height="34" Margin="0"></ListViewItem>
+            <ListViewItem Content="Alex" Height="47" Margin="0"></ListViewItem>
+            <ListViewItem Content="Sara" Height="37" Margin="0"></ListViewItem>
+            <ListViewItem Content="Anna" Height="44" Margin="0"></ListViewItem>
 
         </ListView>
 
         <Border BorderBrush="Black" BorderThickness="3,3,3,2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="87" VerticalAlignment="Top" Width="792" />
         <Border BorderBrush="Black" BorderThickness="2,1,3,3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="332" Margin="220,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="572" Grid.RowSpan="3">
-            <TextBlock HorizontalAlignment="Left" Margin="33,210,0,-37" TextWrapping="Wrap" Text="Entry date:" Width="188" />
+            <TextBlock HorizontalAlignment="Left" Margin="33,200,0,-60" TextWrapping="Wrap" Text="Entry date:" Width="188" />
         </Border>
-        <Border BorderBrush="Black" BorderThickness="3,0,0,3" HorizontalAlignment="Left" Height="23" Grid.Row="1" VerticalAlignment="Top" Width="220"/>
-        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="28,32,0,0" Grid.Row="3" VerticalAlignment="Top" Width="195" BorderBrush="Black" BorderThickness="3"/>
+        <Border BorderBrush="Black" BorderThickness="3,0,0,3" HorizontalAlignment="Left" Height="38" Grid.Row="1" VerticalAlignment="Top" Width="220" Grid.RowSpan="2">
+            <Button x:Name="refresh" Content="Refresh" HorizontalAlignment="Left" Height="28" Margin="7,0,0,0" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.464,0.879" BorderBrush="Black" BorderThickness="3"   />
+        </Border>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="28,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="195" BorderBrush="Black" BorderThickness="3"/>
+        <Button Content="Save" Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="41,56,0,0" Grid.Row="3" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.49,0.106"/>
 
 
 
