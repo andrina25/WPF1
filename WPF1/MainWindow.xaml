@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF1"
-        mc:Ignorable="d"  FontSize="18" FontFamily="Segoe UI " FontWeight="Bold"
+        mc:Ignorable="d"  FontSize="18" FontFamily="Comic Sans MS" FontWeight="Bold"
         Title="Wired Brain Coffee- Employee Manager " Height="450" Width="800" >
     <Grid>
 
@@ -17,9 +17,9 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="200"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="39*"/>
         </Grid.RowDefinitions>
 
         <TextBlock  Grid.ColumnSpan="4" FontSize="35" FontFamily="Segoe UI Light"
@@ -27,24 +27,24 @@
                     Text=" Create a Windows Forms App" />
 
         <TextBlock  Grid.Column="1" Grid.Row="1" 
-                      Text="     Firstname: "  />
+                      Text="     Firstname: " Margin="0,0,0,181" Grid.RowSpan="2"  />
 
-        <TextBox  Grid.Column="1" Grid.Row="2"  Margin="79,10,70,155"
-                  BorderBrush="Black"  />
+        <TextBox  Grid.Column="1" Grid.Row="2"  Margin="28,10,70,155"
+                  BorderBrush="Black" BorderThickness="3" />
 
         <TextBlock  Grid.Column="1" Grid.Row="2" 
                Text="     Job role: " Margin="0,50,0,117" RenderTransformOrigin="0.514,1.056" />
 
         <CheckBox Grid.Column="1" Grid.Row="2"
-                  Margin="61,145,537,17" RenderTransformOrigin="-1.342,3.433" />
+                  Margin="61,151,537,17" RenderTransformOrigin="-1.342,3.433" BorderBrush="Black" BorderThickness="2"/>
 
         <TextBlock Grid.Column="1" Grid.Row="2"  
-                   Margin="90,145,171,17"  FontSize="17"
+                   Margin="82,145,171,17"  FontSize="17"
                    Text=" Is coffee drinker"/>
 
 
-        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="79,88,0,0" Grid.Row="2" VerticalAlignment="Top" Width="292" RenderTransformOrigin="0.002,0.436">
-            <ListBoxItem Content="Software developer"></ListBoxItem>
+        <ListBox Grid.Column="1" HorizontalAlignment="Left" Height="39" Margin="30,88,0,0" Grid.Row="2" VerticalAlignment="Top" Width="292" RenderTransformOrigin="0.002,0.436" BorderThickness="3" BorderBrush="Black">
+            <ListBoxItem Content="Software developer" Width="266"></ListBoxItem>
             <ListBoxItem Content="Web developer"></ListBoxItem>
             <ListBoxItem Content="Database Administrator"></ListBoxItem>
             <ListBoxItem Content="Information Security Analyst"></ListBoxItem>
@@ -55,10 +55,44 @@
 
 
 
-        <Border BorderBrush="Black" BorderThickness="4" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="792"/>
-        <Border BorderBrush="Black" BorderThickness="4" HorizontalAlignment="Left" Height="51" Margin="0,77,0,0" Grid.RowSpan="3" VerticalAlignment="Top" Width="225"/>
-        <Border BorderBrush="Black" BorderThickness="4" HorizontalAlignment="Left" Height="291" Margin="0,17,0,0" Grid.Row="2" Grid.RowSpan="2" VerticalAlignment="Top" Width="225"/>
-        <Border BorderBrush="Black" BorderThickness="4" Grid.Column="1" HorizontalAlignment="Left" Height="342" Margin="0,77,0,0" Grid.RowSpan="4" VerticalAlignment="Top" Width="567"/>
+        <ListView HorizontalAlignment="Left" Height="332" Grid.Row="1" VerticalAlignment="Top" Width="220" Grid.RowSpan="3" BorderBrush="Black" BorderThickness="3,1,1,3">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+            <ListViewItem Content="Julia"></ListViewItem>
+            <ListViewItem Content="Thomas"></ListViewItem>
+            <ListViewItem Content="Alex"></ListViewItem>
+            <ListViewItem Content="Sara"></ListViewItem>
+            <ListViewItem Content="Anna"></ListViewItem>
+
+        </ListView>
+
+        <Border BorderBrush="Black" BorderThickness="3,3,3,2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="87" VerticalAlignment="Top" Width="792" />
+        <Border BorderBrush="Black" BorderThickness="2,1,3,3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="332" Margin="220,0,0,0" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" Width="572"/>
+        <Border BorderBrush="Black" BorderThickness="3,0,0,3" HorizontalAlignment="Left" Height="23" Grid.Row="1" VerticalAlignment="Top" Width="220"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
