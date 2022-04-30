@@ -17,12 +17,12 @@
 
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="8*"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="39*"/>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="Auto" MinHeight="196"/>
+            <RowDefinition Height="113*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock  Grid.ColumnSpan="4" FontSize="35" FontFamily="Segoe UI Light"
+        <TextBlock  Grid.ColumnSpan="2" FontSize="35" FontFamily="Segoe UI Light"
                     Margin="140,20,120,20"
                     Text=" Create a Windows Forms App" />
 
@@ -70,8 +70,13 @@
         </ListView>
 
         <Border BorderBrush="Black" BorderThickness="3,3,3,2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="87" VerticalAlignment="Top" Width="792" />
-        <Border BorderBrush="Black" BorderThickness="2,1,3,3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="332" Margin="220,0,0,0" Grid.Row="1" Grid.RowSpan="3" VerticalAlignment="Top" Width="572"/>
+        <Border BorderBrush="Black" BorderThickness="2,1,3,3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="332" Margin="220,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="572" Grid.RowSpan="3">
+            <TextBlock HorizontalAlignment="Left" Margin="33,210,0,-37" TextWrapping="Wrap" Text="Entry date:" Width="188" />
+        </Border>
         <Border BorderBrush="Black" BorderThickness="3,0,0,3" HorizontalAlignment="Left" Height="23" Grid.Row="1" VerticalAlignment="Top" Width="220"/>
+        <DatePicker Grid.Column="1" HorizontalAlignment="Left" Height="37" Margin="28,32,0,0" Grid.Row="3" VerticalAlignment="Top" Width="195" BorderBrush="Black" BorderThickness="3"/>
+
+
 
 
 
